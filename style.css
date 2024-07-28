@@ -1,0 +1,45 @@
+* {
+  font-family: Noto Serif CJK JP;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  font-family: Noto Sans CJK JP;
+  font-size: 1rem;
+  width: 50%;
+}
+
+button {
+  width: 12rem;
+  padding: 5px 25px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: red;
+  margin: 10px;
+  box-shadow: 6px 6px;
+}
+
+button:hover {
+  background: yellow;
+  cursor: pointer;
+  box-shadow: 4px 4px;
+}
