@@ -1,7 +1,7 @@
-const container = document.querySelector("div.container");
-const list = container.querySelectorAll("ul li");
+//const container = document.querySelector("div.container");
+//const list = container.querySelectorAll("ul li");
 
-console.log(list);
+console.log('howdy');
 
 // TODO
 // * add emacs-dashboard like bindings to access links
