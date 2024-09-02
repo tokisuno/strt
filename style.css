@@ -1,113 +1,63 @@
-@font-face {
-  font-family: ubuntu;
-  src: url(./fonts/Ubuntu-Regular.ttf);
-}
-@font-face {
-  font-family: oswald;
-  src: url(./fonts/Oswald-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: mplus;
-  src: url(./fonts/MPLUS1p-Regular.ttf);
-}
-@font-face {
-  font-family: emoji;
-  src: url(./fonts/NotoEmoji-VariableFont_wght.ttf);
-}
-
-:root {
-  --bg:  #1f2355;
-  --fg:  #a9b1d6;
-  --black: #414868;
-  --red: #f7768e;
-  --green: #9ece6a;
-  --yellow: #e0af68;
-  --blue: #7aa2f7;
-  --magenta: #bb9af7;
-  --cyan: #7dcfff;
-  --white: #a9b1d6;
-  --bright-black: #24283b;
-  --bright-red: #db4b4b;
-  --bright-green: #73daca;
-  --bright-yellow: #ff9e64;
-  --bright-blue: #2ac3de;
-  --bright-magenta: #ff007c;
-  --bright-cyan: #89ddff;
-  --bright-white: #c0caf4;
-
-}
-
-* {
-  font-family: ubuntu, mplus, oswald, emoji;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 body {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--black);
-  height: 100vh;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas:
-    "title list";
-    justify-items: center;
-}
-
-.title {
-  text-align: center;
-  font-size: 3.5rem;
-  margin: 24px;
-  font-weight: 400;
-  color: var(--bright-white);
-  writing-mode: vertical-rl;
-  grid-area: title;
-}
-
-.list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  font-size: 1rem;
-  width: 40%;
-  grid-area: list;
+  line-height: 1.3;
 }
 
-button {
-  appearance: none; 
-  -webkit-appearance: none;
-  width: 16rem;
-  padding: 5px 25px;
-  border: 4px solid var(--bg);
-  border-radius: 10px;
-  font-size: 1.6rem;
-  color: var(--bright-black);
-  background: var(--blue);
+.info > .weather-container, 
+.info > .date-container {
+  text-align: center;
   margin: 10px;
-  box-shadow: 6px 6px var(--bg);
 }
 
-button:hover {
-  cursor: pointer;
-  background: var(--bright-red);
-  border: 4px solid var(--bg);
-  box-shadow: 4px 4px var(--bg);
+h1 {
+  font-size: 2.5rem;
+  padding: 10px;
 }
 
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+.container {
+  /* border: 1px solid red; */
 }
 
-.fade-in {
-  animation: fadeIn 0.25s ease-in-out;
-};
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: min(0, 50%);
+}
+
+.container > .study,
+.container > .resources,
+.container > .news,
+.container > .leisure {
+  border: 2px solid red;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 5px;
+  width: min(50%, 30vw, 100%);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.container > .study > h2,
+.container > .resources > h2,
+.container > .news > h2,
+.container > .leisure > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  font-weight: 800;
+  font-size: 0.95rem;
+}

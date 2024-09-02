@@ -3,23 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-    <title>/home</title>
+    <title>ホームページ</title>
   </head>
-  <body class='fade-in'>
-    <div class="container">
-      <div class="title">ようこそ・・・</div>  
-      <div class="list">
-        <ul>
-          <li><button onclick="location.href='https://theodinproject.com/dashboard'" type="button">top</button></li>
-          <li><button onclick="location.href='https://nytimes.com'" type="button">nytimes</button></li>
-          <li><button onclick="location.href='https://github.com'" type="button">github</button></li>
-          <li><button onclick="location.href='https://jisho.org'" type="button">jisho</button></li>
-          <li><button onclick="location.href='https://github.com/Wizcorp/japanese-dev-lingo'" type="button">jp dev lingo</button></li>
-          <li><button onclick="location.href='https://codestitch.app/complete-guide-to-freelancing'" type="button">freelance guide</button></li>
-        </ul>  
-      </div> 
+  <body>
+    <h1>FUERZA PO QL</h1>
+    <div class="info">
+      <div class="date-container">
+        <div class="date"></div>
+        <div class="week"></div>
+        <div class="remain"></div>
+      </div>
+
+      <div class="weather-container">
+        <div class="location"></div>
+        <div class="weather"></div>
+      </div>
+
     </div>
-  <script src="./index.js"></script>
+    <div class="container">
+      <div class="study">
+        <h2>Study</h2>
+        <ul>
+          <li><a href="https://theodinproject.com/dashboard"># TheOdinProject</a></li>
+          <li><a href="https://wanikani.com/"># Wanikani</a></li>
+          <li><a href="https://guidetojapanese.org/learn/category/grammar-guide/"># TK's Grammar Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://jisho.org"># Jisho</a></li>
+          <li><a href="https://github.com/Wizcorp/japanese-dev-lingo?tab=readme-ov-file#word-list"># Japanese dev lingo</a></li>
+          <li><a href="https://awesome.re"># Awesome Lists</a></li>
+        </ul>
+      </div>
+
+      <div class="news">
+        <h2>News</h2>
+        <ul>
+          <li><a href="https://nytimes.com/"># NYTimes</a></li>
+          <li><a href="https://www3.nhk.or.jp/news/"># NHK</a></li>
+          <li><a href="https://emol.com/"># Emol</a></li>
+        </ul>
+      </div>
+
+      <div class="leisure">
+        <h2>Leisure</h2>
+        <ul>
+          <li><a href="https://lichess.org"># Lichess</a></li>
+          <li><a href="https://nytimes.com/crosswords/"># NYT Games</a></li>
+          <li><a href="https://www.khanacademy.org/math"># Khan Academy</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
