@@ -39,7 +39,7 @@ function getWeather(data) {
     });
 }
 
-getWeather(getData());
+getWeather(getData('hamilton'));
 
 /*****************************
           * DATE *
