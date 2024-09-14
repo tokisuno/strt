@@ -35,7 +35,7 @@ function getWeather(data) {
         const location = document.querySelector('div.location');
         location.textContent = `${res.location}`;
         const weather = document.querySelector('div.weather');
-        weather.textContent = `${res.temp} (${res.humidity}%) :: PoP ${res.precip}%`
+        weather.textContent = `${res.temp}°C (${res.humidity}% humid) w/ PoP of ${res.precip}%`
     });
 }
 
